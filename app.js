@@ -1,8 +1,13 @@
 const express = require('express')
 const app = express()
- 
+//setting view engien
+app.set('view engine', 'ejs');
+
+/*
+    ROUTES
+*/
 app.get('/', function (req, res) {
-  res.send('Hello World')
+  res.render('home.ejs');
 })
  
 app.listen(3000 , function(){
