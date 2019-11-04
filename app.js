@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 */
 
 //middleweare
-app.use(express.static('.public'));
+app.use(express.static('./public'));
 
 app.get('/', function (req, res) {
   res.render('home.ejs');
